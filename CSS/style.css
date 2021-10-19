@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 /* BOOTSTRAP SIZE SCREEN
 xs (for phones - screens less than 768px wide)
 sm (for tablets - screens equal to or greater than 768px wide)
@@ -14,3 +20,51 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
 
 /* xs first */
 
+aside{
+    background-color: black;
+    width: 5%;
+    height: 90vh;
+    float: left;
+}
+
+main{
+    width: 95%;
+    height: 90vh;
+    float: left;
+    background-color: lightblue;
+    border: 1px solid red;
+}
+
+footer{
+    background-color: lightgrey;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main{
+    width: 100%;
+    height: 10%;
+    background-color: lime;
+    border: 1px solid pink;
+}
+
+.bottom-main{
+    width: 100%;
+    height: 90%;
+    background-color: purple;
+}
+
+.left-foot,
+.right-foot{
+    height: 100%;
+    width: 20%;
+    background-color: tomato;
+}
+
+.mid-foot{
+    height: 100%;
+    width: 45%;
+    background-color: wheat;
+}
