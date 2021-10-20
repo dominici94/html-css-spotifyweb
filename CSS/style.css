@@ -137,8 +137,47 @@ main{
     height: calc(100% - 70px);
     background-color: rgb(20, 25, 34);
     margin-top: 70px;
+    padding: 10px;
     /* overflow: auto; da dare al contenuto */
 }
+
+.content-main nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-main nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: grey;
+    margin: 10px 10px;
+    font-weight: bold;;
+}
+
+.content-main h2{
+    padding: 10px 0;
+}
+
+.content-main .songs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.song-box{
+    width: 150px;
+    margin-right: 15px;
+}
+
+.song-box img{
+    width: 150px;
+}
+
+.song-description{
+    text-align: center;
+}
+
+/* footer */
 
 footer{
     background-color: lightgrey;
