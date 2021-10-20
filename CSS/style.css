@@ -130,6 +130,7 @@ main{
     border-radius: 30px;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 10px;
 }
 
 .content-main{
@@ -155,6 +156,10 @@ main{
     font-weight: bold;;
 }
 
+#bord-btm{
+    border-bottom: 1px solid lightgreen;
+}
+
 .content-main h2{
     padding: 10px 0;
 }
@@ -165,12 +170,12 @@ main{
 }
 
 .song-box{
-    width: 150px;
+    width: 47%;
     margin-right: 15px;
 }
 
 .song-box img{
-    width: 150px;
+    width: 100%;
 }
 
 .song-description{
@@ -185,7 +190,7 @@ main{
 /* footer */
 
 footer{
-    background-color: lightgrey;
+    background-color: lightskyblue;
     width: 100%;
     height: 100px;
     display: flex;
@@ -198,13 +203,13 @@ footer{
 .right-foot{
     height: 100%;
     width: 20%;
-    background-color: tomato;
+    background-color: lightgreen;
 }
 
 .mid-foot{
     height: 100%;
     width: 45%;
-    background-color: wheat;
+    background-color: lightseagreen;
 }
 
 
@@ -260,6 +265,21 @@ footer{
 
     .header-main{
         width: calc(100% - 180px);
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .song-box{
+        width: 22%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .song-box{
+        width: 15%;
     }
 }
 
