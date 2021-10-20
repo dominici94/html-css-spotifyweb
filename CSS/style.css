@@ -138,7 +138,7 @@ main{
     background-color: rgb(20, 25, 34);
     margin-top: 70px;
     padding: 10px;
-    /* overflow: auto; da dare al contenuto */
+    overflow: auto;
 }
 
 .content-main nav{
@@ -159,7 +159,7 @@ main{
     padding: 10px 0;
 }
 
-.content-main .songs{
+.content-main .songs-list{
     display: flex;
     flex-wrap: wrap;
 }
@@ -175,6 +175,11 @@ main{
 
 .song-description{
     text-align: center;
+}
+
+.round{
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /* footer */
