@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="debug">
     <!-- aside posizionato a sinistra contente "header spotify" la nav home - cerca - la tua libreria + playlist (con display none);
@@ -17,19 +18,57 @@
     footer diviso in 3 parti display fixed sullo stesso piano del top main. -->
     <section class="row">
         <aside>
-
+            <!-- top nav laterale -->
             <div class="top-side">
-                <img src="img/logo-small.svg" alt="logo spotify">
-                <img src="img/home.svg" alt="logo home">
-                <img src="img/search.svg" alt="lente ingrandimento">
-                <img src="img/libreria.svg" alt="logo libreria">
-            </div>
+                <div class="button-nav">
+                    <img src="img/logo-small.svg" alt="logo spotify" id="small-logo">
+                    <img src="img/logo.svg" alt="spotify grande" id="big-logo">
+                </div>
+                
+                <div id="home" class="button-nav">
+                    <img src="img/home.svg" alt="logo home">
+                    <a href="">Home</a>
+                </div>
+                <div class="button-nav">
+                    <img src="img/search.svg" alt="lente ingrandimento">
+                    <a href="#">Cerca</a>
+                </div>
+                <div class="button-nav">
+                    <img src="img/libreria.svg" alt="logo libreria">
+                    <a href="#">La tua libreria</a>
+                </div>
+                <div id="playlist">
+                    <h3>playlist</h3>
+                    <div id="crea-playlist">
+                        <a href="#"><i class="fas fa-plus"></i>Crea Playlist</a>
+                    </div>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                </div>
+                
 
-            <div class="bottom-side">
-                <img id="download" src="img/download.svg" alt="logo download">
-                <img id="user" src="img/profile.svg" alt="logo profilo">
             </div>
             
+            <!-- fine top nav laterale -->
+
+            <!-- bottom nav laterale -->
+            <div class="bottom-side">
+                <div class="button-nav">
+                    <img id="download" src="img/download.svg" alt="logo download">
+                    <a href="#">Installa app</a>
+                </div>
+                <div class="button-nav">
+                    <img id="user" src="img/profile.svg" alt="logo profilo">
+                    <a href="#">John Doe</a>
+                </div>
+                
+            </div>
+            <!-- fine bottom nav laterale -->
             
         </aside>
         <main>

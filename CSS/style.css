@@ -31,32 +31,52 @@ aside{
     background-color: black;
     width: 50px;
     height: calc(100vh - 100px);
-    min-height: 350px;
+    min-height: 450px;
     float: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.top-side{
+aside .top-side{
     height: calc(100% - 80px);
-}
-
-.bottom-side{
-    height: 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-aside .top-side img{
-    width: 50px;
-    padding: 5px 10px 0;
+aside .bottom-side{
+    height: 80px;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+
+#playlist{
+    padding: 10px;
+}
+
+#playlist h3{
+    text-transform: uppercase;
+    display: none;
+}
+
+#playlist i{
+    background-color: grey;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px 10px 10px 0;
+}
+
+.bottom-side .button-nav{
+    display: flex;
+    align-items: center;
 }
 
 #download{
     width: 20px;
     padding-bottom: 10px;
+    
 }
 
 #user{
@@ -64,6 +84,23 @@ aside .top-side img{
     border-radius: 50%;
     width: 30px;
     padding: 5px;
+}
+
+aside .top-side img{
+    width: 50px;
+    padding: 5px 10px 0;
+}
+
+aside a{
+    display: none;
+}
+
+aside .bottom-side img{
+    padding: 0 1px;
+}
+
+#big-logo{
+    display: none;
 }
 
 /* fine sidebar */
@@ -136,6 +173,43 @@ footer{
         width: 180px;
     }
     
+    #small-logo{
+        display: none;
+    }
+
+    #big-logo{
+        display: block;
+        width: 150px;
+        margin-bottom: 15px;
+    }
+
+    #home{
+        border-left: 2px solid lightgreen;
+    }
+
+    aside a{
+        display: inline;
+        text-decoration: none;
+        color: white;
+    }
+
+    #playlist{
+        display: block;
+    }
+
+    #playlist h3{
+        display: block;
+    }
+
+    .bottom-side a{
+        margin-left: 10px;
+    }
+    
+    .bottom-side .button-nav:first-of-type{
+        border-bottom: 1px solid grey;
+        margin-bottom: 5px;
+    }
+
     main{
         width: calc(100% - 180px);
     }
