@@ -311,8 +311,21 @@ footer{
     flex-direction: column;
 }
 
+#title h6:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.song-icon i:hover{
+    color: white;
+}
+
 .artist{
     color: white;
+}
+
+.mid-foot #play:hover{
+    transform: scale(1.2);
 }
 
 .fake-bar{
@@ -320,6 +333,10 @@ footer{
     border: 2px solid lightgray;
     border-radius: 5px;
     margin: 0 10px;
+}
+
+.fake-bar:hover{
+    border-color: limegreen;
 }
 
 .right-foot{
