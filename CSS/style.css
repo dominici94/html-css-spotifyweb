@@ -212,6 +212,17 @@ footer{
     background-color: lightseagreen;
 }
 
+.top-mid-foot,
+.btm-mid-foot{
+    height: 50%;
+}
+
+.top-mid-foot{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
 
 
 /* responsive */
@@ -296,3 +307,13 @@ footer{
 /* .debug .bottom-side{
     background-color: cornflowerblue;
 } */
+
+.debug .top-mid-foot{
+    border: 1px solid orange;
+    background-color: red;
+}
+
+.debug .btm-mid-foot{
+    border: 1px solid green;
+    background-color: greenyellow;
+}
