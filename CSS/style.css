@@ -206,7 +206,6 @@ footer{
 .right-foot{
     height: 100%;
     width: 20%;
-    background-color: seagreen;
 }
 
 .mid-foot{
@@ -236,6 +235,7 @@ footer{
     width: 100%;
     display: flex;
     align-items: center;
+    min-width: 185px;
 }
 
 .left-foot{
@@ -269,6 +269,16 @@ footer{
     margin: 0 10px;
 }
 
+.right-foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 135px;
+}
+
+.right-foot i{
+    padding: 5px;
+}
 
 
 /* responsive */
