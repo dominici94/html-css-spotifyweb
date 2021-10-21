@@ -70,6 +70,14 @@ aside .bottom-side{
     margin: 10px 10px 10px 0;
 }
 
+#playlist ul{
+    list-style: none;
+}
+
+#playlist ul li{
+    padding: 5px 0;
+}
+
 .bottom-side .button-nav{
     display: flex;
     align-items: center;
@@ -95,6 +103,10 @@ aside .top-side img{
 
 aside a{
     display: none;
+}
+
+aside a:hover{
+    color: white;
 }
 
 aside .bottom-side img{
@@ -346,7 +358,7 @@ footer{
     aside a{
         display: inline-block;
         text-decoration: none;
-        color: white;
+        color: lightgrey;
     }
 
     #playlist{
