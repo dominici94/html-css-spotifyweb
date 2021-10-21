@@ -53,6 +53,8 @@ aside .bottom-side{
 
 #playlist{
     padding: 10px;
+    overflow-y: scroll;
+    z-index: 0;
 }
 
 #playlist h3{
@@ -157,7 +159,7 @@ main{
 }
 
 #bord-btm{
-    border-bottom: 1px solid lightgreen;
+    border-bottom: 2px solid lightgreen;
 }
 
 .content-main h2{
@@ -193,6 +195,7 @@ footer{
     background-color: lightskyblue;
     width: 100%;
     height: 100px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -221,6 +224,29 @@ footer{
     text-align: center;
     width: 200px;
     margin: 0 auto;
+}
+
+.left-foot{
+    display: flex;
+    align-items: center;
+    color: lightgrey;
+}
+
+.left-foot img{
+    height: 50px;
+}
+
+.song-info{
+    padding: 10px;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+}
+
+.artist{
+    color: white;
 }
 
 
@@ -276,6 +302,15 @@ footer{
 
     .header-main{
         width: calc(100% - 180px);
+    }
+
+    #title{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #title > h6{
+        margin-right: 2px
     }
 
 }
