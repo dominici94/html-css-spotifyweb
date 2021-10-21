@@ -192,7 +192,7 @@ main{
 /* footer */
 
 footer{
-    background-color: lightskyblue;
+    background-color: rgb(40, 40, 40);
     width: 100%;
     height: 100px;
     padding: 10px;
@@ -206,13 +206,12 @@ footer{
 .right-foot{
     height: 100%;
     width: 20%;
-    background-color: lightgreen;
+    background-color: seagreen;
 }
 
 .mid-foot{
     height: 100%;
     width: 45%;
-    background-color: lightseagreen;
 }
 
 .top-mid-foot,
@@ -224,12 +223,26 @@ footer{
     text-align: center;
     width: 200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#play{
+    font-size: 30px;
+}
+
+.btm-mid-foot{
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .left-foot{
     display: flex;
     align-items: center;
-    color: lightgrey;
+    color: rgb(135, 135, 135);
+    min-width: 135px;
 }
 
 .left-foot img{
@@ -247,6 +260,13 @@ footer{
 
 .artist{
     color: white;
+}
+
+.fake-bar{
+    width: 90%;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    margin: 0 10px;
 }
 
 
@@ -303,7 +323,7 @@ footer{
     .header-main{
         width: calc(100% - 180px);
     }
-
+    
     #title{
         display: flex;
         flex-direction: row;
@@ -312,7 +332,6 @@ footer{
     #title > h6{
         margin-right: 2px
     }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -343,12 +362,12 @@ footer{
     background-color: cornflowerblue;
 } */
 
-.debug .top-mid-foot{
+/* .debug .top-mid-foot{
     border: 1px solid orange;
     background-color: red;
-}
+} */
 
-.debug .btm-mid-foot{
+/* .debug .btm-mid-foot{
     border: 1px solid green;
     background-color: greenyellow;
-}
+} */
